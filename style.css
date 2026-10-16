@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffeff3;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.app {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #4c28751a;
+}
+
+h1 {
+    color: #db3a48;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #888;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.task-input {
+    display: flex;
+    gap: 8px;
+}
+
+#taskInput {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d8c9ef;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background: #e76969;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d68589;
+}
+
+#taskCount {
+    color: #777;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#taskList li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+#taskList li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete-button {
+    background: #f5e7ee;
+    color: #a33d64;
+}
+
+#emptyMessage {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 0;
+}
